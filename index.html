@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field Cultivation Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Field Cultivation Calculator</h1>
+    <label for="field-size">Enter Field Size (in bighas):</label>
+    <input type="number" id="field-size" placeholder="Enter field size">
+    
+    <label for="tractor-type">Select Tractor Type:</label>
+    <select id="tractor-type">
+      <option value="small">Small Tractor</option>
+      <option value="medium">Medium Tractor</option>
+      <option value="large">Large Tractor</option>
+    </select>
+    
+    <label for="plough-type">Select Plough Type:</label>
+    <select id="plough-type">
+      <option value="disc">Disc Plough</option>
+      <option value="reversible">Reversible Plough</option>
+      <option value="harrow">Harrow Plough</option>
+    </select>
+
+    <button onclick="calculatePloughing()">Calculate</button>
+
+    <h2>Results:</h2>
+    <p id="ploughing-time">Estimated Time: -</p>
+    <p id="cost-estimate">Estimated Cost: -</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
